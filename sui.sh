@@ -13,7 +13,7 @@ bash_profile=$HOME/.bash_profile
 if [ -f "$bash_profile" ]; then
     . $HOME/.bash_profile
 fi
-sleep 1 && curl -s https://raw.githubusercontent.com/exfeddix17/luckyteam/main/luckyteam.sh | bash && sleep 2
+curl -s https://raw.githubusercontent.com/exfeddix17/luckyteam/main/luckyteam.sh | bash && sleep 2
 
 echo -e '\n\e[42mInstall software\e[0m\n' && sleep 1
 apt-get update && DEBIAN_FRONTEND=noninteractive TZ=Etc/UTC apt-get install -y --no-install-recommends tzdata git ca-certificates curl build-essential libssl-dev pkg-config libclang-dev cmake jq
